@@ -18,9 +18,9 @@ const AddUser = props => {
 			alert('All fields must be filled!');
 			return;
 		}
+		props.onAddUsers(enteredUsername, enteredAge);
 		setEnteredAge('');
 		setEnteredUsername('');
-		console.log(enteredUsername, enteredAge);
 	}
 
 	const usernameChangeHandler = e => {
